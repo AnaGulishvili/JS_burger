@@ -1,0 +1,129 @@
+
+
+header {
+    position: relative;
+    left:0;
+    top: 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    background-color: #313342;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    height: 200px;
+    
+}
+.logo-image {
+    max-width: 200px;
+    width: 100%;
+
+}
+.nav-wraper {
+    display: flex;
+    font-family: "BPG Boxo-Boxo", sans-serif;
+    font-size: 28px;
+    gap: 42px;
+    width: 100%;
+    
+
+}
+.banner-image {
+    width: 100%;
+    margin-top: 200px;
+}
+.nav-container {
+    display: flex;
+    gap: 42px;
+}
+.burger-logo {
+   display: none;
+   cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 40px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: white;
+    margin-bottom: 9px;
+}
+.burger-logo .bar {
+    display: block;
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    margin: 6px 0;
+    background: white;
+}
+
+  .close-icon1  {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(6px) rotate(45deg);
+ }
+  .close-icon2 {
+    transition: transform 0.3s ease-in-out;
+    transform:translateY(-6px) rotate(-45deg);
+  }
+  .close-icon3 {
+    opacity: 0;
+  }
+  .li-active {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    background-color: #2A2B37;
+    opacity: 0.8;
+    position: absolute;
+    left:0;
+    top: 200px;
+    height: 100vh;
+    padding-left: 50px;
+
+}
+  
+    
+.logo-active {
+        display: block;   
+    
+}
+
+
+@media (max-width: 1024px) {
+    .nav-wraper {
+        display: none;
+    }
+    .logo-image {
+        margin-left: -200px;
+    }
+    .burger-logo {
+        display: block;
+        margin-right: -300px;
+    }
+    .li-active {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        background-color: #2A2B37;
+        opacity: 0.8;
+        position: absolute;
+        left:-100%;
+        top: 200px;
+        height: 100vh;
+        padding-left: 70px;
+        padding-top:10px;
+        animation: grow 0.5s  1 normal forwards;
+
+        
+}
+@keyframes grow {
+    100% {left: 0};
+}
+
+
+}
+
